@@ -1,0 +1,35 @@
+/* =============================================================
+   Level Up Leverage — Border & Radius Tokens
+   ============================================================= */
+
+:root {
+
+  /* ── Border Widths ───────────────────────────────────────── */
+  --border-thin:    1px;
+  --border-default: 1px;
+  --border-medium:  1.5px;
+  --border-thick:   2px;
+
+  /* ── Border Radius ───────────────────────────────────────── */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:   12px;
+  --radius-2xl:  16px;
+  --radius-3xl:  24px;
+  --radius-full: 9999px;
+
+  /* ── Semantic radius ─────────────────────────────────────── */
+  --radius-btn:     var(--radius-md);     /* buttons */
+  --radius-input:   var(--radius-md);     /* inputs, selects */
+  --radius-card:    var(--radius-lg);     /* cards and panels */
+  --radius-card-lg: var(--radius-xl);     /* large feature cards */
+  --radius-badge:   var(--radius-full);   /* status badges */
+  --radius-tag:     var(--radius-sm);     /* category tags */
+  --radius-dialog:  var(--radius-xl);     /* modals & dialogs */
+  --radius-tooltip: var(--radius-sm);     /* tooltips */
+  --radius-avatar:  var(--radius-full);   /* round avatars */
+  --radius-chip:    var(--radius-full);   /* selection chips */
+}

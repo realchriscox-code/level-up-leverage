@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet data-dc-atomics="">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/colors.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/typography.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/shadows.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/borders.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/animation.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/styles.css">
+<script src="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/_ds_bundle.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  body{margin:0;background:#fff;font-family:'Outfit',sans-serif}
+  a{color:var(--text-link);text-decoration:none}
+  a:hover{color:var(--text-link-hover)}
+  .lul-dotgrid{background-image:radial-gradient(rgba(255,255,255,0.14) 1px, transparent 1px);background-size:24px 24px}
+  .lul-wrap{max-width:1240px;margin:0 auto;padding-left:56px;padding-right:56px}
+  @media (max-width:900px){
+    .lul-wrap{padding-left:24px;padding-right:24px}
+    .lul-hero-grid{grid-template-columns:1fr!important}
+    .lul-founder-grid{grid-template-columns:1fr!important}
+    .lul-process-grid{grid-template-columns:1fr!important}
+    .lul-process-grid img{position:static!important;height:280px!important;margin-bottom:8px}
+    .lul-serve-grid{grid-template-columns:repeat(2,1fr)!important}
+    .lul-results-grid{grid-template-columns:1fr!important}
+    .lul-nav-links{display:none!important}
+  }
+</style>
+</helmet>
+
+<div style="display:flex;align-items:center;justify-content:space-between;padding:18px 56px;background:#fff;border-bottom:1px solid var(--border-subtle)">
+  <img src="assets/logo-color.png" alt="Level Up Leverage" style="height:48px">
+  <div style="display:flex;align-items:center;gap:28px" class="lul-nav-links">
+    <a href="#" style="font-size:14px;font-weight:500;color:var(--text-primary)">About</a>
+    <a href="#" style="font-size:14px;font-weight:500;color:var(--text-primary)">Services</a>
+    <a href="FAQ.dc.html" style="font-size:14px;font-weight:500;color:var(--text-primary)">FAQ</a>
+    <x-import component-from-global-scope="LevelUpLeverageDesignSystem_dc9f94.Button" variant="accent" size="md" hint-size="auto,40px">Book a Discover session</x-import>
+  </div>
+</div>
+
+<div class="lul-dotgrid" style="background-color:var(--color-navy-900);padding:88px 0">
+  <div class="lul-wrap lul-hero-grid" style="display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center">
+    <div>
+      <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.12em;color:var(--color-mint-300);text-transform:uppercase;border:1px solid rgba(168,221,216,0.35);border-radius:9999px;padding:5px 14px;margin-bottom:24px">NOW BOOKING DISCOVER SESSIONS</span>
+      <h1 style="font-size:52px;line-height:1.12;font-weight:800;color:#fff;margin:0 0 20px;letter-spacing:-0.02em">Less busywork.<br><span style="color:var(--color-mint-300)">More leverage.</span></h1>
+      <p style="max-width:520px;margin:0 0 36px;font-size:18px;line-height:1.6;color:rgba(255,255,255,0.75)">We build operational leverage into relationship-driven businesses through better systems, practical technology, and hands-on implementation.</p>
+      <div style="display:flex;gap:14px">
+        <x-import component-from-global-scope="LevelUpLeverageDesignSystem_dc9f94.Button" variant="accent" size="lg" hint-size="auto,48px">Book a Discover session</x-import>
+        <x-import component-from-global-scope="LevelUpLeverageDesignSystem_dc9f94.Button" variant="secondary" size="lg" hint-size="auto,48px" style="background:transparent;border-color:rgba(255,255,255,0.35);color:#fff">See how it works</x-import>
+      </div>
+    </div>
+    <img src="assets/hero-team.png" alt="Real estate professionals reviewing listings and pipeline data together" style="width:100%;height:420px;object-fit:cover;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg)">
+  </div>
+</div>
+
+<div style="padding:64px 0;border-bottom:1px solid var(--border-subtle);background:var(--surface-subtle)">
+  <div class="lul-wrap">
+    <div class="lul-process-grid" style="display:grid;grid-template-columns:0.85fr 1.15fr;gap:40px;align-items:start">
+    <img src="assets/process-planning.png" alt="Consultant mapping out a project roadmap on a whiteboard and tablet" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-md);position:sticky;top:24px">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div>
+        <h2 style="font-size: 36px; font-weight: 700; color: var(--text-heading); margin: 0 0 12px; max-width: 1100px; width: 100%">From Conversation to Implementation</h2>
+        <p style="font-size:16px;color:var(--text-secondary);margin:0;max-width:520px">The Leverage Kickstart process, in three stages.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;background:#fff;border:1px solid var(--border-default);border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:32px 36px">
+        <div style="display:flex;align-items:center;justify-content:center;font-size:56px;font-weight:800;color:var(--color-mint-300)">1</div>
+        <div>
+          <h3 style="font-size:24px;font-weight:700;color:var(--text-heading);margin:0 0 10px">Discover</h3>
+          <p style="font-size:16px;line-height:1.7;color:var(--text-secondary);margin:0 0 14px;max-width:600px">A complimentary session where we learn about your business, your goals, and the challenges you're trying to solve. By the end, you'll have clarity on your biggest opportunities, and we'll know which Leverage Kickstart option is right for you.</p>
+          <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px">
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><i data-lucide="check" style="width:16px;height:16px;color:var(--color-mint-600);flex-shrink:0;margin-top:2px"></i>A 45 to 60 minute conversation about your business</li>
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><i data-lucide="check" style="width:16px;height:16px;color:var(--color-mint-600);flex-shrink:0;margin-top:2px"></i>A detailed Discover Summary report</li>
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><i data-lucide="check" style="width:16px;height:16px;color:var(--color-mint-600);flex-shrink:0;margin-top:2px"></i>Clear guidance on the next step</li>
+          </ul>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;background:#fff;border:1px solid var(--border-default);border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:32px 36px">
+        <div style="display:flex;align-items:center;justify-content:center;font-size:56px;font-weight:800;color:var(--color-mint-300)">2</div>
+        <div>
+          <h3 style="font-size:24px;font-weight:700;color:var(--text-heading);margin:0 0 10px">Leverage Summary</h3>
+          <p style="font-size:16px;line-height:1.7;color:var(--text-secondary);margin:0 0 14px;max-width:600px">We map what we learned against your current systems, tools, and workflows and hand you a clear diagnosis: what to build, simplify, or automate first, in the order that creates the most leverage.</p>
+          <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px">
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><i data-lucide="check" style="width:16px;height:16px;color:var(--color-mint-600);flex-shrink:0;margin-top:2px"></i>A prioritized list of projects</li>
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><i data-lucide="check" style="width:16px;height:16px;color:var(--color-mint-600);flex-shrink:0;margin-top:2px"></i>A scope of work to be completed</li>
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" aria-hidden="true" data-om-id="1b8e8cdd:61" style="width: 16px; height: 16px; color: var(--color-mint-600); flex-shrink: 0; margin-top: 2px;" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"></path></svg>Put us to work</li>
+          </ul>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:120px 1fr;gap:32px;background:#fff;border:1px solid var(--border-default);border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:32px 36px">
+        <div style="display:flex;align-items:center;justify-content:center;font-size:56px;font-weight:800;color:var(--color-mint-300)">3</div>
+        <div>
+          <h3 style="font-size:24px;font-weight:700;color:var(--text-heading);margin:0 0 10px">Leverage Kickstart</h3>
+          <p style="font-size:16px;line-height:1.7;color:var(--text-secondary);margin:0 0 14px;max-width:600px">We work alongside your team to build the automations, SOPs, and tech stack changes from your Summary, then test them until they run the way they're supposed to.</p>
+          <ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px">
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><i data-lucide="check" style="width:16px;height:16px;color:var(--color-mint-600);flex-shrink:0;margin-top:2px"></i>Full project implementation</li>
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><i data-lucide="check" style="width:16px;height:16px;color:var(--color-mint-600);flex-shrink:0;margin-top:2px"></i>Clear communication throughout</li>
+            <li style="display:flex;gap:8px;font-size:14px;color:var(--text-primary)"><i data-lucide="check" style="width:16px;height:16px;color:var(--color-mint-600);flex-shrink:0;margin-top:2px"></i>Training on how to get the most from what we built</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:80px 0;background:var(--color-navy-700)">
+  <div class="lul-wrap">
+    <div style="text-align:center;margin-bottom:44px">
+      <h2 style="font-size:32px;font-weight:700;color:#fff;margin:0">Who we serve</h2>
+      <p style="font-size:16px;color:rgba(255,255,255,0.7);margin:10px 0 0">Our sweet spot: businesses where relationships drive growth.</p>
+    </div>
+    <div class="lul-serve-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="user" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Real estate agents</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Systems that free you up to sell, not manage paperwork.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="users" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Real estate teams</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Shared processes that keep every agent aligned.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="building-2" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Brokerages</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Standardized operations across every office.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="landmark" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Mortgage companies</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Faster handoffs between origination and closing.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="camera" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Real estate photographers</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Booking and delivery that runs itself.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="clipboard-check" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Home inspectors</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Scheduling and reporting without the back-and-forth.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="layout" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Staging companies</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Inventory and scheduling under control.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="scale" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Closing attorneys</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Fewer manual touches, faster closings.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="shield" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Insurance agencies</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Renewals and follow-ups that don't fall through.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="trending-up" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Financial advisors</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Client onboarding that feels effortless.</div>
+      </div>
+      <div style="background:#fff;border-radius:var(--radius-card-lg);box-shadow:var(--shadow-lg);padding:22px;display:flex;flex-direction:column;gap:10px">
+        <div style="width:36px;height:36px;border-radius:9999px;background:var(--color-mint-100);display:flex;align-items:center;justify-content:center"><i data-lucide="megaphone" style="width:18px;height:18px;color:var(--color-mint-800)"></i></div>
+        <div style="font-size:14.5px;font-weight:600;color:var(--text-heading)">Marketing agencies</div>
+        <div style="font-size:13px;color:var(--text-secondary);line-height:1.4">Client reporting and delivery, systemized.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="padding:72px 0;background:#fff">
+  <div class="lul-wrap lul-founder-grid" style="display:grid;grid-template-columns:440px 1fr;gap:40px;align-items:center">
+    <img src="assets/founder-chris-cox.jpg" alt="Chris Cox, founder of Level Up Leverage" style="width:440px;height:440px;border-radius:var(--radius-card);object-fit:cover;object-position:top">
+    <div>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.12em;color:var(--text-mint);text-transform:uppercase">Why we do this</span>
+      <h2 style="font-size:28px;font-weight:700;color:var(--text-heading);margin:8px 0 14px">"Technology isn't the goal. Leverage is."</h2>
+      <p style="font-size:15px;line-height:1.65;color:var(--text-secondary);margin:0 0 14px">Chris has spent 18 years in the real estate space building operations for growing real estate teams before starting Level Up Leverage. After rebuilding the same systems over and over, he started helping other relationship-driven businesses skip the trial and error.</p>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div style="padding:64px 0;background:var(--color-navy-700);text-align:center">
+  <div class="lul-wrap">
+    <h2 style="font-size:30px;font-weight:700;color:#fff;margin:0 0 10px">Ready to build more leverage?</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,0.7);margin:0 0 26px">Start with a complimentary Discover session. No pressure, no pitch, just clarity.</p>
+    <x-import component-from-global-scope="LevelUpLeverageDesignSystem_dc9f94.Button" variant="accent" size="lg" hint-size="auto,48px">Book a Discover session</x-import>
+  </div>
+</div>
+
+<div style="padding:40px 0;background:var(--color-navy-900)">
+  <div class="lul-wrap" style="display:flex;justify-content:space-between;align-items:center">
+    <img src="assets/logo-white.png" alt="Level Up Leverage" style="height:26px">
+    <div style="display:flex;gap:24px">
+      <a href="About.dc.html" style="font-size:13px;color:rgba(255,255,255,0.65)">About</a>
+      <a href="Services.dc.html" style="font-size:13px;color:rgba(255,255,255,0.65)">Services</a>
+      <a href="FAQ.dc.html" style="font-size:13px;color:rgba(255,255,255,0.65)">FAQ</a>
+    </div>
+    <div style="font-size:12px;color:rgba(255,255,255,0.4)">© 2026 Level Up Leverage</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    if (window.lucide) window.lucide.createIcons();
+  }
+  componentDidUpdate() {
+    if (window.lucide) window.lucide.createIcons();
+  }
+  renderVals() {
+    return {};
+  }
+}
+
+</script>
+</body>
+</html>

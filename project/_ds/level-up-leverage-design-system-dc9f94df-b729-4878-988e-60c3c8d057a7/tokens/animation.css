@@ -1,0 +1,50 @@
+/* =============================================================
+   Level Up Leverage — Animation & Motion Tokens
+   ============================================================= */
+
+:root {
+
+  /* ── Durations ───────────────────────────────────────────── */
+  --duration-instant: 50ms;   /* @kind other */
+  --duration-fast:    100ms;  /* @kind other */
+  --duration-normal:  180ms;  /* @kind other */
+  --duration-slow:    300ms;  /* @kind other */
+  --duration-slower:  500ms;  /* @kind other */
+  --duration-slowest: 800ms;  /* @kind other */
+
+  /* ── Easing curves ───────────────────────────────────────── */
+  --ease-linear:   linear;                           /* @kind other */
+  --ease-in:       cubic-bezier(0.4, 0, 1, 1);      /* @kind other */
+  --ease-out:      cubic-bezier(0, 0, 0.2, 1);      /* @kind other */
+  --ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);   /* @kind other */
+  --ease-spring:   cubic-bezier(0.175, 0.885, 0.32, 1.075); /* @kind other */
+  --ease-back-out: cubic-bezier(0.34, 1.56, 0.64, 1);       /* @kind other */
+
+  /* ── Named transitions ───────────────────────────────────── */
+  --transition-fast:   all var(--duration-fast)   var(--ease-out);   /* @kind other */
+  --transition-normal: all var(--duration-normal) var(--ease-out);   /* @kind other */
+  --transition-slow:   all var(--duration-slow)   var(--ease-out);   /* @kind other */
+
+  --transition-colors: color              var(--duration-normal) var(--ease-out),
+                       background-color   var(--duration-normal) var(--ease-out),
+                       border-color       var(--duration-normal) var(--ease-out),
+                       fill               var(--duration-normal) var(--ease-out); /* @kind other */
+
+  --transition-shadow: box-shadow  var(--duration-normal) var(--ease-out);    /* @kind other */
+  --transition-opacity:opacity     var(--duration-normal) var(--ease-out);    /* @kind other */
+  --transition-transform:transform var(--duration-normal) var(--ease-out);    /* @kind other */
+
+  /* ── Press scale ─────────────────────────────────────────── */
+  --press-scale: 0.97; /* @kind other */
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast:    0ms; /* @kind other */
+    --duration-normal:  0ms; /* @kind other */
+    --duration-slow:    0ms; /* @kind other */
+    --duration-slower:  0ms; /* @kind other */
+    --duration-slowest: 0ms; /* @kind other */
+  }
+}

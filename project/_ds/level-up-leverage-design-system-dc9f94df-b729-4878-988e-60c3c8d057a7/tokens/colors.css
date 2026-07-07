@@ -1,0 +1,119 @@
+/* =============================================================
+   Level Up Leverage — Color Tokens
+   Official values from Brand Standards Guide v1.0
+   ============================================================= */
+
+:root {
+
+  /* ── Navy (Primary brand — "LEVERAGE" wordmark, tallest bar) */
+  --color-navy-50:  #eef3f8;
+  --color-navy-100: #d4e1ee;
+  --color-navy-200: #a9c3dd;
+  --color-navy-300: #7aa0c9;
+  --color-navy-400: #527db4;
+  --color-navy-500: #395d93;
+  --color-navy-600: #2c4a7a;
+  --color-navy-700: #203654;
+  --color-navy-800: #172845;
+  --color-navy-900: #0f1c30;
+  --color-navy-950: #090f1c;
+
+  /* ── Mint (Brand secondary — "LEVEL UP" wordmark, shorter bars)
+     Official brand color: #A8DDD8                               */
+  --color-mint-50:  #f0faf9;
+  --color-mint-100: #d6f2ef;
+  --color-mint-200: #b8e8e4;
+  --color-mint-300: #A8DDD8;
+  --color-mint-400: #6cc8c2;
+  --color-mint-500: #4aaeaa;
+  --color-mint-600: #378f8b;
+  --color-mint-700: #277371;
+  --color-mint-800: #1a5557;
+  --color-mint-900: #0f3839;
+  --color-mint-950: #081e1f;
+
+  /* ── Gold (Accent — upward arrow, "More Leverage." tagline)
+     Official brand color: #F5B335                               */
+  --color-gold-50:  #fffbf0;
+  --color-gold-100: #fef2d3;
+  --color-gold-200: #fde1a0;
+  --color-gold-300: #fccb65;
+  --color-gold-400: #F5B335;
+  --color-gold-500: #e09420;
+  --color-gold-600: #ba780e;
+  --color-gold-700: #935e0a;
+  --color-gold-800: #6c4408;
+  --color-gold-900: #462c05;
+  --color-gold-950: #281802;
+
+  /* ── Slate (UI chrome neutrals) ──────────────────────────── */
+  --color-slate-50:  #f4f6fa;
+  --color-slate-100: #e8edf5;
+  --color-slate-200: #cfd9e8;
+  --color-slate-300: #a6bcd4;
+  --color-slate-400: #7898b8;
+  --color-slate-500: #54749a;
+  --color-slate-600: #3e5880;
+  --color-slate-700: #2c3f5e;
+  --color-slate-800: #1c2b40;
+  --color-slate-900: #111c2c;
+  --color-slate-950: #090e18;
+
+  /* ── Charcoal (Body text — official brand color) ─────────── */
+  --color-charcoal: #30363F;
+
+  /* ── Semantic ─────────────────────────────────────────────── */
+  --color-success:       #10b981;
+  --color-success-light: #d1fae5;
+  --color-success-dark:  #065f46;
+  --color-warning:       #f59e0b;
+  --color-warning-light: #fef3c7;
+  --color-warning-dark:  #78350f;
+  --color-error:         #ef4444;
+  --color-error-light:   #fee2e2;
+  --color-error-dark:    #7f1d1d;
+  --color-info:          #3b82f6;
+  --color-info-light:    #dbeafe;
+  --color-info-dark:     #1e3a8a;
+
+  /* ── Brand Aliases ────────────────────────────────────────── */
+  --brand-primary:        var(--color-navy-700);   /* #203654 */
+  --brand-primary-hover:  var(--color-navy-800);
+  --brand-mint:           var(--color-mint-300);   /* #A8DDD8 */
+  --brand-mint-hover:     var(--color-mint-400);
+  --brand-mint-light:     var(--color-mint-50);
+  --brand-gold:           var(--color-gold-400);   /* #F5B335 */
+  --brand-gold-hover:     var(--color-gold-500);
+  --brand-gold-light:     var(--color-gold-100);
+
+  /* ── Surface ─────────────────────────────────────────────── */
+  --surface-base:        #ffffff;
+  --surface-subtle:      var(--color-slate-50);
+  --surface-muted:       var(--color-slate-100);
+  --surface-raised:      #ffffff;
+  --surface-dark:        var(--color-navy-700);
+  --surface-dark-subtle: var(--color-navy-800);
+  --surface-mint:        var(--color-mint-50);
+  --surface-gold:        var(--color-gold-50);
+
+  /* ── Text ────────────────────────────────────────────────── */
+  --text-primary:    var(--color-charcoal);        /* #30363F body text */
+  --text-heading:    var(--color-navy-700);         /* #203654 headings */
+  --text-secondary:  var(--color-slate-600);
+  --text-tertiary:   var(--color-slate-400);
+  --text-disabled:   var(--color-slate-300);
+  --text-on-dark:    #ffffff;
+  --text-on-accent:  #ffffff;
+  --text-gold:       var(--color-gold-600);
+  --text-mint:       var(--color-mint-700);
+  --text-link:       var(--color-navy-700);
+  --text-link-hover: var(--color-navy-800);
+
+  /* ── Border ──────────────────────────────────────────────── */
+  --border-subtle:   var(--color-slate-100);
+  --border-default:  var(--color-slate-200);
+  --border-strong:   var(--color-slate-300);
+  --border-brand:    var(--color-navy-700);
+  --border-mint:     var(--color-mint-300);
+  --border-gold:     var(--color-gold-400);
+}

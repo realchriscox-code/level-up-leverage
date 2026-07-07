@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet data-dc-atomics>
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/colors.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/typography.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/shadows.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/borders.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/tokens/animation.css">
+<link rel="stylesheet" href="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/styles.css">
+<script src="_ds/level-up-leverage-design-system-dc9f94df-b729-4878-988e-60c3c8d057a7/_ds_bundle.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  body{margin:0;background:#fff;font-family:'Outfit',sans-serif}
+  a{color:var(--text-link);text-decoration:none}
+  a:hover{color:var(--text-link-hover)}
+  .lul-dotgrid{background-image:radial-gradient(rgba(255,255,255,0.14) 1px, transparent 1px);background-size:24px 24px}
+  .lul-wrap{max-width:1240px;margin:0 auto;padding-left:56px;padding-right:56px}
+  @media (max-width:900px){
+    .lul-wrap{padding-left:24px;padding-right:24px}
+    .lul-nav-links{display:none!important}
+  }
+</style>
+</helmet>
+
+<div style="display:flex;align-items:center;justify-content:space-between;padding:18px 56px;background:#fff;border-bottom:1px solid var(--border-subtle)">
+  <a href="Homepage.dc.html"><img src="assets/logo-color.png" alt="Level Up Leverage" style="height:48px"></a>
+  <div style="display:flex;align-items:center;gap:28px" class="lul-nav-links">
+    <a href="Homepage.dc.html#about" style="font-size:14px;font-weight:500;color:var(--text-primary)">About</a>
+    <a href="Homepage.dc.html#services" style="font-size:14px;font-weight:500;color:var(--text-primary)">Services</a>
+    <a href="FAQ.dc.html" style="font-size:14px;font-weight:600;color:var(--brand-primary)">FAQ</a>
+    <x-import component-from-global-scope="LevelUpLeverageDesignSystem_dc9f94.Button" variant="accent" size="md" hint-size="auto,40px">Book a Discover session</x-import>
+  </div>
+</div>
+
+<div class="lul-dotgrid" style="background-color:var(--color-navy-900);padding:72px 0">
+  <div class="lul-wrap" style="text-align:center">
+    <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.12em;color:var(--color-mint-300);text-transform:uppercase;border:1px solid rgba(168,221,216,0.35);border-radius:9999px;padding:5px 14px;margin-bottom:20px">Frequently asked questions</span>
+    <h1 style="font-size:44px;line-height:1.15;font-weight:800;color:#fff;margin:0 0 14px;letter-spacing:-0.02em">Answers before you get started.</h1>
+    <p style="max-width:560px;margin:0 auto;font-size:17px;line-height:1.6;color:rgba(255,255,255,0.75)">If you don't see your question here, ask us directly on a Discover call.</p>
+  </div>
+</div>
+
+<div style="padding:80px 0;background:#fff">
+  <div class="lul-wrap" style="max-width:800px">
+    <sc-for list="{{ faqs }}" as="item" hint-placeholder-count="6">
+      <div style="border-bottom:1px solid var(--border-subtle)">
+        <button onClick="{{ item.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 4px;background:none;border:none;text-align:left;cursor:pointer">
+          <span style="font-size:18px;font-weight:600;color:var(--text-heading)">{{ item.q }}</span>
+          <i data-lucide="plus" style="width:20px;height:20px;color:var(--color-mint-700);flex-shrink:0;transition:transform 180ms ease-out;transform:{{ item.iconTransform }}"></i>
+        </button>
+        <sc-if value="{{ item.open }}" hint-placeholder-val="{{ false }}">
+          <p style="margin:0 0 24px;padding:0 4px;font-size:15.5px;line-height:1.7;color:var(--text-secondary);max-width:680px">{{ item.a }}</p>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+</div>
+
+<div style="padding:64px 0;background:var(--color-navy-700);text-align:center">
+  <div class="lul-wrap">
+    <h2 style="font-size:30px;font-weight:700;color:#fff;margin:0 0 10px">Still have questions?</h2>
+    <p style="font-size:15px;color:rgba(255,255,255,0.7);margin:0 0 26px">Book a Discover session and ask us directly. No pressure, no pitch, just clarity.</p>
+    <x-import component-from-global-scope="LevelUpLeverageDesignSystem_dc9f94.Button" variant="accent" size="lg" hint-size="auto,48px">Book a Discover session</x-import>
+  </div>
+</div>
+
+<div style="padding:40px 0;background:var(--color-navy-900)">
+  <div class="lul-wrap" style="display:flex;justify-content:space-between;align-items:center">
+    <img src="assets/logo-white.png" alt="Level Up Leverage" style="height:26px">
+    <div style="display:flex;gap:24px">
+      <a href="Homepage.dc.html#about" style="font-size:13px;color:rgba(255,255,255,0.65)">About</a>
+      <a href="Homepage.dc.html#services" style="font-size:13px;color:rgba(255,255,255,0.65)">Services</a>
+      <a href="FAQ.dc.html" style="font-size:13px;color:rgba(255,255,255,0.65)">FAQ</a>
+    </div>
+    <div style="font-size:12px;color:rgba(255,255,255,0.4)">© 2026 Level Up Leverage</div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    faqs: [
+      { q: "What exactly is Leverage Kickstart?", a: "It's our three-stage process for building better systems into your business. We start with a Discover session, hand you a Leverage Summary that prioritizes what to fix first, then implement it alongside your team." },
+      { q: "Who is this for?", a: "Relationship-driven businesses in and around real estate: agents, teams, brokerages, mortgage companies, photographers, inspectors, staging companies, closing attorneys, insurance agencies, financial advisors, and marketing agencies." },
+      { q: "How long does the process take?", a: "The Discover session runs 45 to 60 minutes. Your Leverage Summary follows within a few business days. Implementation timelines depend on scope, and we'll give you a clear estimate before any work begins." },
+      { q: "What does the Discover session cost?", a: "Nothing. It's complimentary. You'll leave with a clearer picture of your biggest opportunities, whether or not you move forward with a Leverage Kickstart." },
+      { q: "Do I need existing systems or tech in place already?", a: "No. Some clients come to us with nothing but spreadsheets and sticky notes, others already run a full tech stack that needs simplifying. We meet you where you are." },
+      { q: "What happens after implementation is done?", a: "We train your team on how to get the most from what we built, then hand it off. If you want ongoing support after that, we'll talk through what that looks like." }
+    ],
+    open: {}
+  };
+  componentDidMount() {
+    if (window.lucide) window.lucide.createIcons();
+  }
+  componentDidUpdate() {
+    if (window.lucide) window.lucide.createIcons();
+  }
+  toggle(i) {
+    this.setState(s => ({ open: { ...s.open, [i]: !s.open[i] } }));
+  }
+  renderVals() {
+    const open = this.state.open;
+    return {
+      faqs: this.state.faqs.map((f, i) => ({
+        ...f,
+        open: !!open[i],
+        iconTransform: open[i] ? 'rotate(45deg)' : 'rotate(0deg)',
+        toggle: () => this.toggle(i)
+      }))
+    };
+  }
+}
+
+</script>
+</body>
+</html>
