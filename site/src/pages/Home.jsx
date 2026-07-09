@@ -159,6 +159,7 @@ export default function Home() {
                 Book a Discover session
               </Button>
               <Button
+                href="#how-it-works"
                 variant="secondary"
                 size="lg"
                 style={{ height: 48, background: 'transparent', borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}
@@ -182,7 +183,10 @@ export default function Home() {
       </div>
 
       {/* Process */}
-      <div style={{ padding: '64px 0', borderBottom: '1px solid var(--border-subtle)', background: 'var(--surface-subtle)' }}>
+      <div
+        id="how-it-works"
+        style={{ padding: '64px 0', borderBottom: '1px solid var(--border-subtle)', background: 'var(--surface-subtle)' }}
+      >
         <div className="lul-wrap">
           <div
             className="lul-process-grid"

@@ -88,8 +88,14 @@ export default function Button({
   };
 
   if (href) {
+    const isAnchor = href.startsWith('#');
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" {...sharedProps}>
+      <a
+        href={href}
+        target={isAnchor ? undefined : '_blank'}
+        rel={isAnchor ? undefined : 'noopener noreferrer'}
+        {...sharedProps}
+      >
         {children}
       </a>
     );
