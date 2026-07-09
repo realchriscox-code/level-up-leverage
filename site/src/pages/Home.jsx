@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { processSteps } from '../data/processSteps';
 import { whoWeServe } from '../data/whoWeServe';
+import { BOOKING_URL } from '../data/links';
 
 const cardStyle = {
   background: '#fff',
@@ -153,7 +154,7 @@ export default function Home() {
               practical technology, and hands-on implementation.
             </p>
             <div style={{ display: 'flex', gap: 14 }}>
-              <Button variant="accent" size="lg" style={{ height: 48 }}>
+              <Button href={BOOKING_URL} variant="accent" size="lg" style={{ height: 48 }}>
                 Book a Discover session
               </Button>
               <Button
@@ -292,7 +293,7 @@ export default function Home() {
           <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.7)', margin: '0 0 26px' }}>
             Start with a complimentary Discover session. No pressure, no pitch, just clarity.
           </p>
-          <Button variant="accent" size="lg" style={{ height: 48 }}>
+          <Button href={BOOKING_URL} variant="accent" size="lg" style={{ height: 48 }}>
             Book a Discover session
           </Button>
         </div>

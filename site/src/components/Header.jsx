@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Button from './Button';
+import { BOOKING_URL } from '../data/links';
 
 export default function Header({ activePage }) {
   const linkStyle = (isActive) => ({
@@ -32,7 +33,7 @@ export default function Header({ activePage }) {
         <Link to="/faq" style={linkStyle(activePage === 'faq')}>
           FAQ
         </Link>
-        <Button variant="accent" size="md" style={{ height: 40 }}>
+        <Button href={BOOKING_URL} variant="accent" size="md" style={{ height: 40 }}>
           Book a Discover session
         </Button>
       </div>

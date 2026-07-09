@@ -45,6 +45,7 @@ export default function Button({
   children,
   onClick,
   type = 'button',
+  href,
   style,
   ...props
 }) {
@@ -53,40 +54,48 @@ export default function Button({
   const s = sizeMap[size] || sizeMap.md;
   const v = (variantMap[variant] || variantMap.primary)(hovered);
 
+  const sharedProps = {
+    onMouseEnter: () => setHovered(true),
+    onMouseLeave: () => {
+      setHovered(false);
+      setPressed(false);
+    },
+    onMouseDown: () => setPressed(true),
+    onMouseUp: () => setPressed(false),
+    style: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: s.gap,
+      fontFamily: 'var(--font-body)',
+      fontWeight: 600,
+      fontSize: s.fontSize,
+      lineHeight: '1.25rem',
+      padding: s.padding,
+      borderRadius: 'var(--radius-btn)',
+      cursor: 'pointer',
+      whiteSpace: 'nowrap',
+      userSelect: 'none',
+      outline: 'none',
+      transform: pressed ? 'scale(0.97)' : 'scale(1)',
+      transition:
+        'background-color 180ms cubic-bezier(0,0,0.2,1), box-shadow 180ms cubic-bezier(0,0,0.2,1), transform 100ms cubic-bezier(0,0,0.2,1)',
+      ...v,
+      ...style,
+    },
+    ...props,
+  };
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" {...sharedProps}>
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => {
-        setHovered(false);
-        setPressed(false);
-      }}
-      onMouseDown={() => setPressed(true)}
-      onMouseUp={() => setPressed(false)}
-      style={{
-        display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: s.gap,
-        fontFamily: 'var(--font-body)',
-        fontWeight: 600,
-        fontSize: s.fontSize,
-        lineHeight: '1.25rem',
-        padding: s.padding,
-        borderRadius: 'var(--radius-btn)',
-        cursor: 'pointer',
-        whiteSpace: 'nowrap',
-        userSelect: 'none',
-        outline: 'none',
-        transform: pressed ? 'scale(0.97)' : 'scale(1)',
-        transition:
-          'background-color 180ms cubic-bezier(0,0,0.2,1), box-shadow 180ms cubic-bezier(0,0,0.2,1), transform 100ms cubic-bezier(0,0,0.2,1)',
-        ...v,
-        ...style,
-      }}
-      {...props}
-    >
+    <button type={type} onClick={onClick} {...sharedProps}>
       {children}
     </button>
   );

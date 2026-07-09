@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import { faqs } from '../data/faqs';
+import { BOOKING_URL } from '../data/links';
 
 function FAQItem({ item }) {
   const [open, setOpen] = useState(false);
@@ -91,7 +92,7 @@ export default function FAQ() {
           <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.7)', margin: '0 0 26px' }}>
             Book a Discover session and ask us directly. No pressure, no pitch, just clarity.
           </p>
-          <Button variant="accent" size="lg" style={{ height: 48 }}>
+          <Button href={BOOKING_URL} variant="accent" size="lg" style={{ height: 48 }}>
             Book a Discover session
           </Button>
         </div>
