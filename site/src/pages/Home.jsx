@@ -16,6 +16,7 @@ const cardStyle = {
 function ProcessStep({ step }) {
   return (
     <div
+      className="lul-step-card"
       style={{
         display: 'grid',
         gridTemplateColumns: '120px 1fr',
@@ -36,7 +37,7 @@ function ProcessStep({ step }) {
       >
         {step.number}
       </div>
-      <div>
+      <div style={{ minWidth: 0 }}>
         <h3 style={{ fontSize: 24, fontWeight: 700, color: 'var(--text-heading)', margin: '0 0 10px' }}>
           {step.title}
         </h3>
@@ -153,7 +154,7 @@ export default function Home() {
               We build operational leverage into relationship-driven businesses through better systems,
               practical technology, and hands-on implementation.
             </p>
-            <div style={{ display: 'flex', gap: 14 }}>
+            <div className="lul-hero-ctas" style={{ display: 'flex', gap: 14 }}>
               <Button href={BOOKING_URL} variant="accent" size="lg" style={{ height: 48 }}>
                 Book a Discover session
               </Button>
@@ -252,9 +253,8 @@ export default function Home() {
           <img
             src="/assets/founder-chris-cox.jpg"
             alt="Chris Cox, founder of Level Up Leverage"
+            className="lul-founder-img"
             style={{
-              width: 440,
-              height: 440,
               borderRadius: 'var(--radius-card)',
               objectFit: 'cover',
               objectPosition: 'top',

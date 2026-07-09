@@ -6,6 +6,12 @@ body {
   margin: 0;
   background: #fff;
   font-family: 'Outfit', sans-serif;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 a {
@@ -29,23 +35,58 @@ a:hover {
   padding-right: 56px;
 }
 
+.lul-header {
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.lul-logo-header,
+.lul-logo-footer {
+  height: 150px;
+}
+
+.lul-menu-btn {
+  display: none;
+}
+
+.lul-mobile-menu {
+  display: none;
+}
+
+.lul-footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lul-founder-img {
+  width: 440px;
+  height: 440px;
+}
+
 @media (max-width: 900px) {
   .lul-wrap {
     padding-left: 24px;
     padding-right: 24px;
   }
+  .lul-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .lul-hero-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: minmax(0, 1fr) !important;
   }
   .lul-founder-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: minmax(0, 1fr) !important;
   }
   .lul-process-grid {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: minmax(0, 1fr) !important;
   }
   .lul-process-grid img {
     position: static !important;
+    width: 100% !important;
     height: 280px !important;
+    min-width: 0;
     margin-bottom: 8px;
   }
   .lul-serve-grid {
@@ -56,5 +97,54 @@ a:hover {
   }
   .lul-nav-links {
     display: none !important;
+  }
+  .lul-logo-header,
+  .lul-logo-footer {
+    height: 56px;
+  }
+  .lul-menu-btn {
+    display: inline-flex !important;
+  }
+  .lul-mobile-menu.is-open {
+    display: flex !important;
+  }
+  .lul-footer-row {
+    flex-direction: column !important;
+    gap: 20px;
+    text-align: center;
+  }
+  .lul-hero-ctas {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  .lul-hero-ctas > * {
+    width: 100%;
+  }
+  .lul-founder-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-width: 440px;
+  }
+  .lul-step-card {
+    grid-template-columns: 48px 1fr !important;
+    gap: 16px !important;
+    padding: 24px 20px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .lul-step-card {
+    grid-template-columns: 1fr !important;
+  }
+  .lul-serve-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .lul-logo-header,
+  .lul-logo-footer {
+    height: 44px;
   }
 }
