@@ -7,7 +7,7 @@ export default function Footer() {
         className="lul-wrap"
         style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}
       >
-        <img src="/assets/logo-white.png" alt="Level Up Leverage" style={{ height: 26 }} />
+        <img src="/assets/logo-white.png" alt="Level Up Leverage" style={{ height: 150 }} />
         <div style={{ display: 'flex', gap: 24 }}>
           <a href="#" style={{ fontSize: 13, color: 'rgba(255,255,255,0.65)' }}>
             About

@@ -21,7 +21,7 @@ export default function Header({ activePage }) {
       }}
     >
       <Link to="/">
-        <img src="/assets/logo-color.png" alt="Level Up Leverage" style={{ height: 48 }} />
+        <img src="/assets/logo-color.png" alt="Level Up Leverage" style={{ height: 150 }} />
       </Link>
       <div style={{ display: 'flex', alignItems: 'center', gap: 28 }} className="lul-nav-links">
         <a href="#" style={linkStyle(activePage === 'about')}>
