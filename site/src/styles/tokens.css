@@ -1,0 +1,365 @@
+/* =============================================================
+   Level Up Leverage — Color Tokens
+   Official values from Brand Standards Guide v1.0
+   ============================================================= */
+
+:root {
+
+  /* ── Navy (Primary brand — "LEVERAGE" wordmark, tallest bar) */
+  --color-navy-50:  #eef3f8;
+  --color-navy-100: #d4e1ee;
+  --color-navy-200: #a9c3dd;
+  --color-navy-300: #7aa0c9;
+  --color-navy-400: #527db4;
+  --color-navy-500: #395d93;
+  --color-navy-600: #2c4a7a;
+  --color-navy-700: #203654;
+  --color-navy-800: #172845;
+  --color-navy-900: #0f1c30;
+  --color-navy-950: #090f1c;
+
+  /* ── Mint (Brand secondary — "LEVEL UP" wordmark, shorter bars)
+     Official brand color: #A8DDD8                               */
+  --color-mint-50:  #f0faf9;
+  --color-mint-100: #d6f2ef;
+  --color-mint-200: #b8e8e4;
+  --color-mint-300: #A8DDD8;
+  --color-mint-400: #6cc8c2;
+  --color-mint-500: #4aaeaa;
+  --color-mint-600: #378f8b;
+  --color-mint-700: #277371;
+  --color-mint-800: #1a5557;
+  --color-mint-900: #0f3839;
+  --color-mint-950: #081e1f;
+
+  /* ── Gold (Accent — upward arrow, "More Leverage." tagline)
+     Official brand color: #F5B335                               */
+  --color-gold-50:  #fffbf0;
+  --color-gold-100: #fef2d3;
+  --color-gold-200: #fde1a0;
+  --color-gold-300: #fccb65;
+  --color-gold-400: #F5B335;
+  --color-gold-500: #e09420;
+  --color-gold-600: #ba780e;
+  --color-gold-700: #935e0a;
+  --color-gold-800: #6c4408;
+  --color-gold-900: #462c05;
+  --color-gold-950: #281802;
+
+  /* ── Slate (UI chrome neutrals) ──────────────────────────── */
+  --color-slate-50:  #f4f6fa;
+  --color-slate-100: #e8edf5;
+  --color-slate-200: #cfd9e8;
+  --color-slate-300: #a6bcd4;
+  --color-slate-400: #7898b8;
+  --color-slate-500: #54749a;
+  --color-slate-600: #3e5880;
+  --color-slate-700: #2c3f5e;
+  --color-slate-800: #1c2b40;
+  --color-slate-900: #111c2c;
+  --color-slate-950: #090e18;
+
+  /* ── Charcoal (Body text — official brand color) ─────────── */
+  --color-charcoal: #30363F;
+
+  /* ── Semantic ─────────────────────────────────────────────── */
+  --color-success:       #10b981;
+  --color-success-light: #d1fae5;
+  --color-success-dark:  #065f46;
+  --color-warning:       #f59e0b;
+  --color-warning-light: #fef3c7;
+  --color-warning-dark:  #78350f;
+  --color-error:         #ef4444;
+  --color-error-light:   #fee2e2;
+  --color-error-dark:    #7f1d1d;
+  --color-info:          #3b82f6;
+  --color-info-light:    #dbeafe;
+  --color-info-dark:     #1e3a8a;
+
+  /* ── Brand Aliases ────────────────────────────────────────── */
+  --brand-primary:        var(--color-navy-700);   /* #203654 */
+  --brand-primary-hover:  var(--color-navy-800);
+  --brand-mint:           var(--color-mint-300);   /* #A8DDD8 */
+  --brand-mint-hover:     var(--color-mint-400);
+  --brand-mint-light:     var(--color-mint-50);
+  --brand-gold:           var(--color-gold-400);   /* #F5B335 */
+  --brand-gold-hover:     var(--color-gold-500);
+  --brand-gold-light:     var(--color-gold-100);
+
+  /* ── Surface ─────────────────────────────────────────────── */
+  --surface-base:        #ffffff;
+  --surface-subtle:      var(--color-slate-50);
+  --surface-muted:       var(--color-slate-100);
+  --surface-raised:      #ffffff;
+  --surface-dark:        var(--color-navy-700);
+  --surface-dark-subtle: var(--color-navy-800);
+  --surface-mint:        var(--color-mint-50);
+  --surface-gold:        var(--color-gold-50);
+
+  /* ── Text ────────────────────────────────────────────────── */
+  --text-primary:    var(--color-charcoal);        /* #30363F body text */
+  --text-heading:    var(--color-navy-700);         /* #203654 headings */
+  --text-secondary:  var(--color-slate-600);
+  --text-tertiary:   var(--color-slate-400);
+  --text-disabled:   var(--color-slate-300);
+  --text-on-dark:    #ffffff;
+  --text-on-accent:  #ffffff;
+  --text-gold:       var(--color-gold-600);
+  --text-mint:       var(--color-mint-700);
+  --text-link:       var(--color-navy-700);
+  --text-link-hover: var(--color-navy-800);
+
+  /* ── Border ──────────────────────────────────────────────── */
+  --border-subtle:   var(--color-slate-100);
+  --border-default:  var(--color-slate-200);
+  --border-strong:   var(--color-slate-300);
+  --border-brand:    var(--color-navy-700);
+  --border-mint:     var(--color-mint-300);
+  --border-gold:     var(--color-gold-400);
+}
+/* =============================================================
+   Level Up Leverage — Typography Tokens
+   Primary typeface: Outfit (Google Fonts) — all weights 300–900
+   Mono: IBM Plex Mono
+   ============================================================= */
+
+/* Outfit + IBM Plex Mono are loaded via the <link> tag in index.html */
+
+:root {
+
+  /* ── Font Families ───────────────────────────────────────── */
+  --font-display: 'Outfit', sans-serif;   /* headings, logos, marketing */
+  --font-body:    'Outfit', sans-serif;   /* body copy, UI, labels */
+  --font-mono:    'IBM Plex Mono', monospace; /* code, IDs, system data */
+
+  /* ── Specific Logo Weights (from brand guide) ────────────── */
+  /* LEVEL UP:  Outfit SemiBold 600                            */
+  /* LEVERAGE:  Outfit ExtraBold 800                           */
+  /* Tagline:   Outfit Medium 500                              */
+
+  /* ── Font Sizes ──────────────────────────────────────────── */
+  --text-2xs:  0.625rem;    /*  10px */
+  --text-xs:   0.75rem;     /*  12px */
+  --text-sm:   0.875rem;    /*  14px */
+  --text-base: 1rem;        /*  16px */
+  --text-lg:   1.125rem;    /*  18px */
+  --text-xl:   1.25rem;     /*  20px */
+  --text-2xl:  1.5rem;      /*  24px */
+  --text-3xl:  1.875rem;    /*  30px */
+  --text-4xl:  2.25rem;     /*  36px */
+  --text-5xl:  3rem;        /*  48px */
+  --text-6xl:  3.75rem;     /*  60px */
+  --text-7xl:  4.5rem;      /*  72px */
+  --text-8xl:  6rem;        /*  96px */
+
+  /* ── Font Weights ────────────────────────────────────────── */
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;   /* tagline */
+  --weight-semibold:  600;   /* LEVEL UP, H2 */
+  --weight-bold:      700;   /* H1 */
+  --weight-extrabold: 800;   /* LEVERAGE wordmark */
+  --weight-black:     900;
+
+  /* ── Line Heights ────────────────────────────────────────── */
+  --leading-none:    1;
+  --leading-tight:   1.15;
+  --leading-snug:    1.3;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+  --leading-loose:   2;
+
+  /* ── Letter Spacing ──────────────────────────────────────── */
+  --tracking-tight:  -0.03em;
+  --tracking-snug:   -0.015em;
+  --tracking-normal:  0em;
+  --tracking-wide:    0.04em;
+  --tracking-wider:   0.07em;
+  --tracking-caps:    0.12em;
+
+  /* ── Semantic Type Roles ─────────────────────────────────── */
+  /* Display — Outfit Bold/ExtraBold */
+  --type-display-hero-size:    var(--text-7xl);
+  --type-display-hero-weight:  var(--weight-extrabold);
+  --type-display-hero-leading: var(--leading-tight);
+  --type-display-hero-tracking:var(--tracking-tight);
+
+  --type-display-xl-size:      var(--text-5xl);
+  --type-display-xl-weight:    var(--weight-bold);
+  --type-display-xl-leading:   var(--leading-tight);
+
+  --type-display-lg-size:      var(--text-4xl);
+  --type-display-lg-weight:    var(--weight-bold);
+  --type-display-lg-leading:   var(--leading-snug);
+
+  /* Heading — Outfit Bold/SemiBold (from brand guide) */
+  --type-h1-size:    var(--text-4xl);
+  --type-h1-weight:  var(--weight-bold);       /* 700 */
+  --type-h1-leading: var(--leading-snug);
+
+  --type-h2-size:    var(--text-3xl);
+  --type-h2-weight:  var(--weight-semibold);   /* 600 */
+  --type-h2-leading: var(--leading-snug);
+
+  /* Body — Outfit Regular (from brand guide) */
+  --type-body-xl-size:   var(--text-xl);
+  --type-body-xl-leading:var(--leading-relaxed);
+
+  --type-body-lg-size:   var(--text-lg);
+  --type-body-lg-leading:var(--leading-relaxed);
+
+  --type-body-md-size:   var(--text-base);
+  --type-body-md-leading:var(--leading-normal);
+
+  --type-body-sm-size:   var(--text-sm);
+  --type-body-sm-leading:var(--leading-normal);
+
+  --type-body-xs-size:   var(--text-xs);
+  --type-body-xs-leading:var(--leading-normal);
+
+  /* Labels / caps */
+  --type-label-size:     var(--text-xs);
+  --type-label-weight:   var(--weight-semibold);
+  --type-label-tracking: var(--tracking-caps);
+  --type-label-transform:uppercase;
+
+  /* Mono */
+  --type-mono-size:    var(--text-sm);
+  --type-mono-leading: var(--leading-relaxed);
+}
+/* =============================================================
+   Level Up Leverage — Spacing Tokens
+   ============================================================= */
+
+:root {
+
+  /* ── Base Scale (4px base unit) ──────────────────────────── */
+  --space-0:    0;
+  --space-px:   1px;
+  --space-0-5:  0.125rem;   /*  2px */
+  --space-1:    0.25rem;    /*  4px */
+  --space-1-5:  0.375rem;   /*  6px */
+  --space-2:    0.5rem;     /*  8px */
+  --space-2-5:  0.625rem;   /* 10px */
+  --space-3:    0.75rem;    /* 12px */
+  --space-3-5:  0.875rem;   /* 14px */
+  --space-4:    1rem;       /* 16px */
+  --space-5:    1.25rem;    /* 20px */
+  --space-6:    1.5rem;     /* 24px */
+  --space-7:    1.75rem;    /* 28px */
+  --space-8:    2rem;       /* 32px */
+  --space-9:    2.25rem;    /* 36px */
+  --space-10:   2.5rem;     /* 40px */
+  --space-11:   2.75rem;    /* 44px */
+  --space-12:   3rem;       /* 48px */
+  --space-14:   3.5rem;     /* 56px */
+  --space-16:   4rem;       /* 64px */
+  --space-18:   4.5rem;     /* 72px */
+  --space-20:   5rem;       /* 80px */
+  --space-24:   6rem;       /* 96px */
+  --space-28:   7rem;       /* 112px */
+  --space-32:   8rem;       /* 128px */
+  --space-40:   10rem;      /* 160px */
+  --space-48:   12rem;      /* 192px */
+  --space-56:   14rem;      /* 224px */
+  --space-64:   16rem;      /* 256px */
+
+  /* ── Semantic Spacing ────────────────────────────────────── */
+  /* Component internals */
+  --gap-xs:  var(--space-1);    /*  4px — icon+text, tight pairs */
+  --gap-sm:  var(--space-2);    /*  8px — input padding, badge gap */
+  --gap-md:  var(--space-3);    /* 12px — form field internal gap */
+  --gap-lg:  var(--space-4);    /* 16px — standard component gap */
+  --gap-xl:  var(--space-6);    /* 24px — section internal gap */
+  --gap-2xl: var(--space-8);    /* 32px — large content blocks */
+
+  /* Layout regions */
+  --layout-content-max:   1280px;
+  --layout-prose-max:     720px;
+  --layout-sidebar-width: 240px;
+  --layout-panel-width:   320px;
+
+  /* Padding scales */
+  --padding-page-x:  var(--space-6);    /* 24px horizontal page margin */
+  --padding-page-y:  var(--space-8);    /* 32px vertical page margin */
+  --padding-section: var(--space-16);   /* 64px between sections */
+  --padding-card:    var(--space-5);    /* 20px inside cards */
+  --padding-card-sm: var(--space-4);    /* 16px inside compact cards */
+  --padding-input-x: var(--space-3);    /* 12px horizontal input */
+  --padding-input-y: var(--space-2-5);  /* 10px vertical input */
+  --padding-btn-x-sm:var(--space-3);    /* 12px button sm */
+  --padding-btn-y-sm:var(--space-1-5);  /*  6px button sm */
+  --padding-btn-x-md:var(--space-4);    /* 16px button md */
+  --padding-btn-y-md:var(--space-2-5);  /* 10px button md */
+  --padding-btn-x-lg:var(--space-6);    /* 24px button lg */
+  --padding-btn-y-lg:var(--space-3);    /* 12px button lg */
+}
+/* =============================================================
+   Level Up Leverage — Shadow Tokens
+   ============================================================= */
+
+:root {
+
+  /* ── Elevation shadows (navy-tinted) ─────────────────────── */
+  --shadow-none: none;
+  --shadow-xs:   0 1px 2px 0 rgba(9, 14, 24, 0.06);
+  --shadow-sm:   0 1px 3px 0 rgba(9, 14, 24, 0.08),
+                 0 1px 2px -1px rgba(9, 14, 24, 0.06);
+  --shadow-md:   0 4px 6px -1px rgba(9, 14, 24, 0.08),
+                 0 2px 4px -2px rgba(9, 14, 24, 0.05);
+  --shadow-lg:   0 10px 15px -3px rgba(9, 14, 24, 0.08),
+                 0 4px 6px -4px rgba(9, 14, 24, 0.05);
+  --shadow-xl:   0 20px 25px -5px rgba(9, 14, 24, 0.10),
+                 0 8px 10px -6px rgba(9, 14, 24, 0.06);
+  --shadow-2xl:  0 25px 50px -12px rgba(9, 14, 24, 0.18);
+
+  /* ── Inset shadows ───────────────────────────────────────── */
+  --shadow-inset-sm: inset 0 1px 2px 0 rgba(9, 14, 24, 0.06);
+  --shadow-inset-md: inset 0 2px 4px 0 rgba(9, 14, 24, 0.08);
+
+  /* ── Accent glows ────────────────────────────────────────── */
+  --shadow-mint:        0 4px 14px 0 rgba(168, 221, 216, 0.40);
+  --shadow-gold:        0 4px 14px 0 rgba(245, 179, 53, 0.32);
+  --shadow-navy:        0 4px 14px 0 rgba(32, 54, 84, 0.35);
+  --shadow-focus-brand: 0 0 0 3px rgba(32, 54, 84, 0.20);
+  --shadow-focus-mint:  0 0 0 3px rgba(168, 221, 216, 0.40);
+
+  /* ── Focus ring (accessibility) ──────────────────────────── */
+  --shadow-focus: 0 0 0 2px var(--surface-base),
+                  0 0 0 4px var(--color-navy-700);
+}
+/* =============================================================
+   Level Up Leverage — Border & Radius Tokens
+   ============================================================= */
+
+:root {
+
+  /* ── Border Widths ───────────────────────────────────────── */
+  --border-thin:    1px;
+  --border-default: 1px;
+  --border-medium:  1.5px;
+  --border-thick:   2px;
+
+  /* ── Border Radius ───────────────────────────────────────── */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:   12px;
+  --radius-2xl:  16px;
+  --radius-3xl:  24px;
+  --radius-full: 9999px;
+
+  /* ── Semantic radius ─────────────────────────────────────── */
+  --radius-btn:     var(--radius-md);     /* buttons */
+  --radius-input:   var(--radius-md);     /* inputs, selects */
+  --radius-card:    var(--radius-lg);     /* cards and panels */
+  --radius-card-lg: var(--radius-xl);     /* large feature cards */
+  --radius-badge:   var(--radius-full);   /* status badges */
+  --radius-tag:     var(--radius-sm);     /* category tags */
+  --radius-dialog:  var(--radius-xl);     /* modals & dialogs */
+  --radius-tooltip: var(--radius-sm);     /* tooltips */
+  --radius-avatar:  var(--radius-full);   /* round avatars */
+  --radius-chip:    var(--radius-full);   /* selection chips */
+}
