@@ -10,47 +10,47 @@ export default function WhatWeBuild() {
     <div>
       <Header activePage="what-we-build" />
 
-      <div style={{ backgroundColor: 'var(--color-navy-900)', padding: '72px 0' }}>
+      <div
+        style={{
+          position: 'relative',
+          backgroundImage: "url('/assets/what-we-build-hero.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          padding: '96px 0',
+        }}
+      >
         <div
-          className="lul-wrap lul-wwb-hero-grid"
-          style={{ display: 'grid', gridTemplateColumns: '1.05fr 0.95fr', gap: 56, alignItems: 'center' }}
-        >
-          <div>
-            <span
-              style={{
-                display: 'inline-block',
-                fontFamily: "'IBM Plex Mono', monospace",
-                fontSize: 12,
-                letterSpacing: '0.12em',
-                color: 'var(--color-mint-300)',
-                textTransform: 'uppercase',
-                border: '1px solid rgba(168,221,216,0.35)',
-                borderRadius: 9999,
-                padding: '5px 14px',
-                marginBottom: 20,
-              }}
-            >
-              What we build
-            </span>
-            <h1 style={{ fontSize: 44, lineHeight: 1.15, fontWeight: 800, color: '#fff', margin: '0 0 14px', letterSpacing: '-0.02em' }}>
-              Real projects, real leverage.
-            </h1>
-            <p style={{ maxWidth: 520, margin: 0, fontSize: 17, lineHeight: 1.6, color: 'rgba(255,255,255,0.75)' }}>
-              Every business is different, and so is every Leverage Kickstart. Tap any project below to see the
-              kinds of scenario we solve. Don&apos;t worry if you don&apos;t see yours, we&apos;ll build it.
-            </p>
-          </div>
-          <img
-            src="/assets/what-we-build-hero.png"
-            alt="Professional working at a desk with systems and dashboards on screen"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background:
+              'linear-gradient(180deg, rgba(32,54,84,0.88) 0%, rgba(32,54,84,0.82) 40%, rgba(32,54,84,0.94) 100%)',
+          }}
+        />
+        <div className="lul-wrap" style={{ position: 'relative', textAlign: 'center' }}>
+          <span
             style={{
-              width: '100%',
-              height: 380,
-              objectFit: 'cover',
-              borderRadius: 'var(--radius-card-lg)',
-              boxShadow: 'var(--shadow-lg)',
+              display: 'inline-block',
+              fontFamily: "'IBM Plex Mono', monospace",
+              fontSize: 12,
+              letterSpacing: '0.12em',
+              color: 'var(--color-mint-300)',
+              textTransform: 'uppercase',
+              border: '1px solid rgba(168,221,216,0.35)',
+              borderRadius: 9999,
+              padding: '5px 14px',
+              marginBottom: 20,
             }}
-          />
+          >
+            What we build
+          </span>
+          <h1 style={{ fontSize: 44, lineHeight: 1.15, fontWeight: 800, color: '#fff', margin: '0 0 14px', letterSpacing: '-0.02em' }}>
+            Real projects, real leverage.
+          </h1>
+          <p style={{ maxWidth: 600, margin: '0 auto', fontSize: 17, lineHeight: 1.6, color: 'rgba(255,255,255,0.75)' }}>
+            Every business is different, and so is every Leverage Kickstart. Tap any project below to see the
+            kinds of scenario we solve. Don&apos;t worry if you don&apos;t see yours, we&apos;ll build it.
+          </p>
         </div>
       </div>
 
