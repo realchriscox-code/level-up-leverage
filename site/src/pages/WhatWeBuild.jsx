@@ -1,4 +1,3 @@
-import { ImageOff } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
@@ -41,25 +40,17 @@ export default function WhatWeBuild() {
               kinds of scenario we solve. Don&apos;t worry if you don&apos;t see yours, we&apos;ll build it.
             </p>
           </div>
-          <div
+          <img
+            src="/assets/what-we-build-hero.png"
+            alt="Professional working at a desk with systems and dashboards on screen"
             style={{
               width: '100%',
               height: 380,
+              objectFit: 'cover',
               borderRadius: 'var(--radius-card-lg)',
               boxShadow: 'var(--shadow-lg)',
-              background: 'rgba(255,255,255,0.05)',
-              border: '1px dashed rgba(255,255,255,0.25)',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: 10,
-              color: 'rgba(255,255,255,0.5)',
             }}
-          >
-            <ImageOff style={{ width: 28, height: 28 }} />
-            <span style={{ fontSize: 13 }}>Hero image pending</span>
-          </div>
+          />
         </div>
       </div>
 
