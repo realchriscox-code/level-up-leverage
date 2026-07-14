@@ -51,8 +51,24 @@ export default function FAQ() {
     <div>
       <Header activePage="faq" />
 
-      <div className="lul-dotgrid" style={{ backgroundColor: 'var(--color-navy-900)', padding: '72px 0' }}>
-        <div className="lul-wrap" style={{ textAlign: 'center' }}>
+      <div
+        style={{
+          position: 'relative',
+          backgroundImage: "url('/assets/faq-hero-bg.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          padding: '72px 0',
+        }}
+      >
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background:
+              'linear-gradient(180deg, rgba(32,54,84,0.88) 0%, rgba(32,54,84,0.82) 40%, rgba(32,54,84,0.94) 100%)',
+          }}
+        />
+        <div className="lul-wrap" style={{ position: 'relative', textAlign: 'center' }}>
           <span
             style={{
               display: 'inline-block',

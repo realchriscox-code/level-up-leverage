@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
@@ -103,82 +103,110 @@ function ServeCard({ item }) {
 export default function Home() {
   return (
     <div>
-      <Header activePage="home" />
-
       {/* Hero */}
-      <div className="lul-dotgrid" style={{ backgroundColor: 'var(--color-navy-900)', padding: '88px 0' }}>
+      <div
+        style={{
+          position: 'relative',
+          minHeight: 760,
+          display: 'flex',
+          flexDirection: 'column',
+          backgroundImage: "url('/assets/hero-bg-office.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div
-          className="lul-wrap lul-hero-grid"
-          style={{ display: 'grid', gridTemplateColumns: '1.05fr 0.95fr', gap: 56, alignItems: 'center' }}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background:
+              'linear-gradient(180deg, rgba(32,54,84,0.88) 0%, rgba(32,54,84,0.82) 40%, rgba(32,54,84,0.94) 100%)',
+          }}
+        />
+        <Header activePage="home" transparent />
+        <div
+          className="lul-wrap"
+          style={{
+            position: 'relative',
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            padding: '64px 0 96px',
+          }}
         >
-          <div>
-            <span
-              style={{
-                display: 'inline-block',
-                fontFamily: "'IBM Plex Mono', monospace",
-                fontSize: 12,
-                letterSpacing: '0.12em',
-                color: 'var(--color-mint-300)',
-                textTransform: 'uppercase',
-                border: '1px solid rgba(168,221,216,0.35)',
-                borderRadius: 9999,
-                padding: '5px 14px',
-                marginBottom: 24,
-              }}
-            >
-              NOW BOOKING DISCOVER SESSIONS
-            </span>
-            <h1
-              style={{
-                fontSize: 52,
-                lineHeight: 1.12,
-                fontWeight: 800,
-                color: '#fff',
-                margin: '0 0 20px',
-                letterSpacing: '-0.02em',
-              }}
-            >
-              Less busywork.
-              <br />
-              <span style={{ color: 'var(--color-mint-300)' }}>More leverage.</span>
-            </h1>
-            <p
-              style={{
-                maxWidth: 520,
-                margin: '0 0 36px',
-                fontSize: 18,
-                lineHeight: 1.6,
-                color: 'rgba(255,255,255,0.75)',
-              }}
-            >
-              We build operational leverage into relationship-driven businesses through better systems,
-              practical technology, and hands-on implementation.
-            </p>
-            <div className="lul-hero-ctas" style={{ display: 'flex', gap: 14 }}>
-              <Button href={BOOKING_URL} variant="accent" size="lg" style={{ height: 48 }}>
-                Book a Discover session
-              </Button>
-              <Button
-                href="#how-it-works"
-                variant="secondary"
-                size="lg"
-                style={{ height: 48, background: 'transparent', borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}
-              >
-                See how it works
-              </Button>
-            </div>
-          </div>
-          <img
-            src="/assets/hero-team.png"
-            alt="Real estate professionals reviewing listings and pipeline data together"
+          <span
             style={{
-              width: '100%',
-              height: 420,
-              objectFit: 'cover',
-              borderRadius: 'var(--radius-card-lg)',
-              boxShadow: 'var(--shadow-lg)',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 8,
+              fontSize: 13,
+              color: 'rgba(255,255,255,0.8)',
+              border: '1px solid rgba(255,255,255,0.25)',
+              borderRadius: 9999,
+              padding: '8px 18px',
+              marginBottom: 32,
+              background: 'rgba(255,255,255,0.05)',
             }}
-          />
+          >
+            Now booking Discover sessions.{' '}
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: 'var(--color-mint-300)',
+                fontWeight: 600,
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 4,
+              }}
+            >
+              Book yours <ArrowRight style={{ width: 14, height: 14 }} />
+            </a>
+          </span>
+          <h1
+            style={{
+              fontSize: 64,
+              lineHeight: 1.1,
+              fontWeight: 800,
+              color: '#fff',
+              margin: '0 0 24px',
+              letterSpacing: '-0.02em',
+              maxWidth: 820,
+            }}
+          >
+            Less busywork.
+            <br />
+            More leverage.
+          </h1>
+          <p
+            style={{
+              maxWidth: 600,
+              margin: '0 0 40px',
+              fontSize: 18,
+              lineHeight: 1.6,
+              color: 'rgba(255,255,255,0.75)',
+            }}
+          >
+            We build operational leverage into relationship-driven businesses through better systems,
+            practical technology, and hands-on implementation.
+          </p>
+          <div className="lul-hero-ctas" style={{ display: 'flex', gap: 16 }}>
+            <Button href={BOOKING_URL} variant="accent" size="lg" style={{ height: 48 }}>
+              Book a Discover session
+            </Button>
+            <Button
+              href="#how-it-works"
+              variant="secondary"
+              size="lg"
+              style={{ height: 48, background: 'transparent', borderColor: 'rgba(255,255,255,0.35)', color: '#fff' }}
+            >
+              See how it works
+            </Button>
+          </div>
         </div>
       </div>
 

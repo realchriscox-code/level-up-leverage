@@ -43,7 +43,7 @@ a:hover {
 
 .lul-logo-header,
 .lul-logo-footer {
-  height: 150px;
+  height: 75px;
 }
 
 .lul-menu-btn {
@@ -74,7 +74,11 @@ a:hover {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .lul-hero-grid {
+  .lul-wwb-hero-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    text-align: center;
+  }
+  .lul-proj-grid {
     grid-template-columns: minmax(0, 1fr) !important;
   }
   .lul-founder-grid {
@@ -131,6 +135,12 @@ a:hover {
     grid-template-columns: 48px 1fr !important;
     gap: 16px !important;
     padding: 24px 20px !important;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 901px) {
+  .lul-proj-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
 
