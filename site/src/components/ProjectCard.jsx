@@ -8,8 +8,10 @@ export default function ProjectCard({ project, index }) {
   const [flipped, setFlipped] = useState(false);
   const number = String(index + 1).padStart(3, '0');
 
+  const Icon = project.icon;
+
   return (
-    <div style={{ perspective: 1600, height: 440 }}>
+    <div style={{ perspective: 1600, height: 300 }}>
       <div
         style={{
           position: 'relative',
@@ -30,10 +32,10 @@ export default function ProjectCard({ project, index }) {
             background: '#fff',
             border: '1px solid var(--border-default)',
             boxShadow: 'var(--shadow-sm)',
-            padding: 28,
+            padding: 24,
             display: 'flex',
             flexDirection: 'column',
-            gap: 16,
+            gap: 12,
             pointerEvents: flipped ? 'none' : 'auto',
           }}
         >
@@ -51,7 +53,11 @@ export default function ProjectCard({ project, index }) {
                 overflow: 'hidden',
               }}
             >
-              {project.image && <img src={project.image} alt="" style={{ width: 32, height: 32, objectFit: 'contain' }} />}
+              {project.image ? (
+                <img src={project.image} alt="" style={{ width: 32, height: 32, objectFit: 'contain' }} />
+              ) : (
+                Icon && <Icon style={{ width: 26, height: 26, color: 'var(--color-navy-700)' }} strokeWidth={1.5} />
+              )}
             </div>
             <span
               style={{
@@ -65,7 +71,7 @@ export default function ProjectCard({ project, index }) {
               {number}
             </span>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8, flex: 1 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6, flex: 1 }}>
             <h3 style={{ margin: 0, fontSize: 18, fontWeight: 700, color: 'var(--text-heading)', lineHeight: 1.3 }}>
               {project.title}
             </h3>
@@ -73,7 +79,7 @@ export default function ProjectCard({ project, index }) {
               {project.blurb}
             </p>
           </div>
-          <div style={{ borderTop: '1px solid var(--border-subtle)', paddingTop: 16 }}>
+          <div style={{ borderTop: '1px solid var(--border-subtle)', paddingTop: 14 }}>
             <button
               type="button"
               onClick={() => setFlipped(true)}
@@ -106,10 +112,10 @@ export default function ProjectCard({ project, index }) {
             transform: 'rotateY(180deg)',
             borderRadius: 'var(--radius-card-lg)',
             background: 'var(--color-navy-900)',
-            padding: 28,
+            padding: 24,
             display: 'flex',
             flexDirection: 'column',
-            gap: 14,
+            gap: 10,
             pointerEvents: flipped ? 'auto' : 'none',
           }}
         >

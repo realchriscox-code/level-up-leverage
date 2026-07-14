@@ -1,3 +1,23 @@
+import {
+  Sparkles,
+  FileText,
+  Zap,
+  Globe,
+  Route,
+  GraduationCap,
+  Search,
+  Layers,
+  ChartColumn,
+  BookOpen,
+  Settings,
+  FileCheck,
+  Presentation,
+  Puzzle,
+  UserCheck,
+  Crown,
+  TrendingUp,
+} from 'lucide-react';
+
 export const PROJECTS = [
   {
     title: 'Your CRM Has Become a Filing Cabinet',
@@ -23,6 +43,7 @@ export const PROJECTS = [
     title: "You've Learned AI. Now Let's Use It.",
     blurb:
       "You've attended the webinars and saved the prompts. Now it's time to turn AI into practical workflows your business actually uses every day.",
+    icon: Sparkles,
     kickstartName: 'AI Leverage Kickstart',
     checklist: [
       'AI workflow design',
@@ -42,6 +63,7 @@ export const PROJECTS = [
     title: 'Your Business Lives in Your Head',
     blurb:
       'When processes only exist in your memory, growth becomes difficult. We document how your business works so your team can execute with confidence.',
+    icon: FileText,
     kickstartName: 'Business Process Documentation Kickstart',
     checklist: [
       'Standard Operating Procedures (SOPs)',
@@ -59,6 +81,7 @@ export const PROJECTS = [
     title: 'Too Much Copy. Too Much Paste.',
     blurb:
       'If your team spends the day moving information between systems, your technology is creating work. We automate the repetitive tasks.',
+    icon: Zap,
     kickstartName: 'Workflow Automation Kickstart',
     checklist: [
       'Task automations',
@@ -76,6 +99,7 @@ export const PROJECTS = [
     title: "Your Website Doesn't Reflect Your Business",
     blurb:
       'Your website is often your first impression. We build websites that clearly communicate who you are, what you do, and why clients should trust you.',
+    icon: Globe,
     kickstartName: 'Website Leverage Kickstart',
     checklist: [
       'Website strategy',
@@ -93,6 +117,7 @@ export const PROJECTS = [
     title: 'Every Client Gets a Different Experience',
     blurb:
       'Great businesses create consistent experiences. We design client journeys that make every interaction feel intentional and memorable.',
+    icon: Route,
     kickstartName: 'Client Journey Kickstart',
     checklist: [
       'Client journey mapping',
@@ -109,6 +134,7 @@ export const PROJECTS = [
     title: 'Every New Team Member Starts From Scratch',
     blurb:
       'Onboarding shouldn\'t begin with, "Watch what I do." We build repeatable onboarding systems that help new hires become productive faster.',
+    icon: GraduationCap,
     kickstartName: 'Team Onboarding Kickstart',
     checklist: [
       'New hire onboarding plans',
@@ -125,6 +151,7 @@ export const PROJECTS = [
     title: 'Your Business Feels Harder Than It Should',
     blurb:
       "Sometimes the biggest opportunity isn't adding another tool, it's simplifying how your business operates. We identify friction and build leverage.",
+    icon: Search,
     kickstartName: 'Business Systems Review Kickstart',
     checklist: [
       'Workflow evaluation',
@@ -141,6 +168,7 @@ export const PROJECTS = [
     title: 'Your Technology Has Outgrown Your Business',
     blurb:
       'Technology should support your business, not complicate it. We evaluate your tools, cut the complexity, and help your systems work together.',
+    icon: Layers,
     kickstartName: 'Technology Stack Kickstart',
     checklist: [
       'Software inventory',
@@ -157,6 +185,7 @@ export const PROJECTS = [
     title: "You Shouldn't Have to Hunt for Answers",
     blurb:
       'Your business data should help you make decisions, not create more questions. We build dashboards and reporting that deliver clarity at a glance.',
+    icon: ChartColumn,
     kickstartName: 'Dashboard & Reporting Kickstart',
     checklist: [
       'KPI dashboards',
@@ -172,6 +201,7 @@ export const PROJECTS = [
     title: 'Nobody Knows Where Anything Is',
     blurb:
       'When information is scattered across emails, folders, and sticky notes, productivity suffers. We build centralized knowledge bases that keep your team aligned.',
+    icon: BookOpen,
     kickstartName: 'Knowledge Base Kickstart',
     checklist: [
       'Internal knowledge base',
@@ -187,6 +217,7 @@ export const PROJECTS = [
     title: 'Your Operations Depend on Heroics',
     blurb:
       "If your business only works because someone remembers everything, it's time to build systems instead of relying on superheroes.",
+    icon: Settings,
     kickstartName: 'Operations Kickstart',
     checklist: [
       'Administrative workflows',
@@ -202,6 +233,7 @@ export const PROJECTS = [
     title: 'Your Forms Are Slowing You Down',
     blurb:
       'Paperwork and manual data entry shouldn\'t slow your team down. We build digital workflows that collect information once and put it to work everywhere.',
+    icon: FileCheck,
     kickstartName: 'Digital Forms & Workflows Kickstart',
     checklist: [
       'Online forms',
@@ -217,6 +249,7 @@ export const PROJECTS = [
     title: 'Great Tools Mean Nothing Without Adoption',
     blurb:
       "The best technology in the world won't create leverage if nobody uses it. We help your team confidently adopt the systems you invest in.",
+    icon: Presentation,
     kickstartName: 'Technology Training Kickstart',
     checklist: [
       'Team workshops',
@@ -232,6 +265,7 @@ export const PROJECTS = [
     title: "Your Challenge Doesn't Fit in a Box",
     blurb:
       "Every business is different. If your challenge doesn't fit one of our standard Kickstarts, we'll build a custom engagement around your goals.",
+    icon: Puzzle,
     kickstartName: 'Custom Leverage Kickstart',
     checklist: [
       'A fully customized project',
@@ -248,6 +282,7 @@ export const PROJECTS = [
     title: 'Your Team Uses the Same System Differently',
     blurb:
       'When everyone develops their own way of working, consistency disappears. We standardize processes so your systems support the entire team.',
+    icon: UserCheck,
     kickstartName: 'CRM Adoption Kickstart',
     checklist: [
       'Team standards',
@@ -264,6 +299,7 @@ export const PROJECTS = [
     title: 'Your Business Depends on You Too Much',
     blurb:
       'If every decision comes back to you, your business has reached a ceiling. We build systems that reduce dependency on the owner.',
+    icon: Crown,
     kickstartName: 'Leadership Systems Kickstart',
     checklist: [
       'Leadership dashboards',
@@ -279,6 +315,7 @@ export const PROJECTS = [
     title: 'Good Businesses Never Stop Improving',
     blurb:
       'Operational leverage is not a one-time project. We help businesses continually improve one system at a time, creating lasting momentum.',
+    icon: TrendingUp,
     kickstartName: 'Continuous Improvement Kickstart',
     checklist: [
       'Quarterly system reviews',
